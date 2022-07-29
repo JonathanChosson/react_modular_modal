@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { Fragment } from "react"
+import "./Modal.css"
 
-const Modal = () => {
+const Modal = ({ text, closeAction }) => {
     return (
-        <div>
-            
-        </div>
-    );
-};
+        <Fragment>
+            <div className="modal-container">
+                <div className="overlay modal-trigger"></div>
+                <div className="modal">
+                    <button
+                        className="close-modal modal-trigger"
+                        onClick={closeAction}
+                    >
+                        X
+                    </button>
+                    <p id="dialogDesc">{text}</p>
+                </div>
+            </div>
+        </Fragment>
+    )
+}
 
-export default Modal;
+export default Modal
