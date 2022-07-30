@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Modal from './components/Modal';
+import React from "react"
+import ReactDOM from "react-dom"
+import { Modal } from "./lib"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Modal />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
+    <React.StrictMode>
+        <Modal />
+    </React.StrictMode>,
+    document.getElementById("root")
+)
